@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .todo-list-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .add-todo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .add-todo input[type="text"],
+  .add-todo input[type="date"],
+  .add-todo button {
+    flex: 1 1 20px;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-todo button {
+    flex: 0 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-todo button:hover {
+    background-color: #45a049;
+  }
+  
+  .todo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .todo-table th,
+  .todo-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .todo-table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .todo-table td {
+    vertical-align: middle;
+  }
+  
+  .todo-table .completed {
+    background-color: #f0f8ff; /* Light blue for completed items */
+  }
+  
+  .todo-table .todo-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .todo-table .todo-actions button {
+    margin-right: 5px;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-table .todo-actions button.edit-button {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .todo-table .todo-actions button.delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .todo-table .todo-actions input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .todo-list-container {
+      width: 90%;
+    }
+    
+    .add-todo {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .add-todo input[type="text"],
+    .add-todo input[type="date"],
+    .add-todo button {
+      width: 100%;
+     
+      margin-bottom: 10px;
+    }
+    
+    .todo-table th,
+    .todo-table td {
+      font-size: 14px;
+      padding: 10px 12px;
+    }
+    
+    .todo-table .todo-actions button {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+  }
+  
